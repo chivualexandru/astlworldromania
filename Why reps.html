@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="RepsHeaven.css">
+    <link rel="icon" type="image/png" href="/images/logo.png"/>
+    <script src="https://unpkg.com/swup@4"></script>
+    <script>
+        const swup = new Swup();
+    </script>
+    <script defer src="fade trans.js"></script>
+    <title>ATSL WORLD Romania</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="RepsHeaven.html">ATSL WORLD Romania.</a></div> <!--.logo/.navbar-->
+            <ul class="links">
+                <li><a href="Why reps.html" target=>Why reps?</a></li>
+                <li><a href="What are reps.html">What are Reps?</a></li>
+                <li><a href="Personal.html">Personal info/collection.</a></li>
+                <li><a href="What are reps.html">What & How to buy (scroll down).</a></li>
+            </ul>
+            <a href="Contact.html" class="action_btn">Contact.</a>  <!--a.action_btn-->
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu ">
+            <li><a href="Why reps.html" target=>Why reps?</a></li>
+            <li><a href="What are reps.html">What are Reps?</a></li>
+            <li><a href="Personal.html">Personal info/collection.</a></li>
+            <li><a href="What are reps.html">What & How to buy (scroll down).</a></li>
+            <li><a href="Contact.html" class="action_btn">Contact.</a></li>
+        </div>
+
+
+    </header>
+
+    <main id="swup" class="transition-fade">
+        <section id="content1">
+            <h1> De ce rep-uri ? </h1>
+            <hr style="color: white; margin: 5px; width: 240px;">
+            <p>
+                In primul rand nu vrem sa va convingem ca <B>TREBUIE</B> sa incepeti sa achizionati <u><a href="What are reps.html" target="_blank">rep-uri*</a></u>. <br><br>
+                Cat timp exista creatori de rep-uri foarte calitative la un pret extrem de mic fata de produsele originale de la brand-urile mari , <br>noi personal nu vedem motivul pentru care sa nu incepem achizitionarea de rep-uri.<br>
+                Insa nu este chiar asa de usor precum pare , din aceasta cauza suntem aici la dispozitia dumneavostra !<br><br>
+                <u>Impreuna o sa ne dezvoltam cunostiintele despre rep-uri.</u><br><br>
+                
+                <h4>Ce produse pot fi introduse in categoria de rep-uri ?</h4>
+                <ul>
+                    <li>Sneakersi precum N*ke , Ad*das , V*rsace , Lv , D*or , B*pe si aproape orice alt brand ti ai putea imagina !</li>
+                    <li>Haine (tricouri , pantaloni , lenjerie intima , manusi , caciuli , tracksuit-uri) precum R*lph L*uren , N*ke , St*ssy , Lv , D*ior , <br>Br*ken Pl*net , C*ctus J*ack , J*rdan etc.</li>
+                    <li>Accesorii precum bijuterii , portofele etc.</li>
+                    <li>Chiar si <B>ELECTRONICE</B> precum A*r pods , Gaming consoles etc. (NU SUNT 100% FUNCTIONALE).</li>
+                    <LI>Decoratiuni de toate felurile.</LI>
+                </ul>
+
+            </p>
+            <p>
+                In conluzie orice pentru oricine, dar sa nu uitam ca nu orice gasim pe internet este si calitativ ! <br><br>
+                <u><a href="What are reps.html" target="_blank">Apasa pe acest text pentru a invata despre batch-uri , selleri si platformele sigure pentru achizitionarea acestora.</a></u>
+
+
+
+
+            </p>
+        </section>
+    </main>
+
+
+
+
+
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const toggleBtnIcon = document.querySelector(".toggle_btn i")
+        const dropDownMeny = document.querySelector(".dropdown_menu")
+
+        toggleBtn.onclick= function () {
+            dropDownMeny.classList.toggle('open')
+            const isOpen = dropDownMeny.classList.contains("open")
+
+            toggleBtnIcon.classList = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars"
+
+        }
+    </script>
+    
+</body>
+</html>

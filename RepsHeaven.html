@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="RepsHeaven.css">
+    <link rel="icon" type="image/png" href="/images/logo.png"/> <!--trb pus / inainte de locatie!!!!-->
+    <script src="https://unpkg.com/swup@4"></script>
+    <script>
+        const swup = new Swup();
+    </script>
+    <script defer src="fade trans.js"></script>
+    <title>ATSL WORLD Romania</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="RepsHeaven.html">ATSL WORLD Romania.</a></div> <!--.logo/.navbar-->
+            <ul class="links">
+                <li><a href="Why reps.html" target=>Why reps?</a></li>
+                <li><a href="What are reps.html">What are Reps?</a></li>
+                <li><a href="Personal.html">Personal info/collection.</a></li>
+                <li><a href="What are reps.html">What & How to buy (scroll down).</a></li>
+            </ul>
+            <a href="Contact.html" class="action_btn">Contact.</a>  <!--a.action_btn-->
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu ">
+            <li><a href="Why reps.html" target=>Why reps?</a></li>
+            <li><a href="What are reps.html">What are Reps?</a></li>
+            <li><a href="Personal.html">Personal info/collection.</a></li>
+            <li><a href="What are reps.html">What & How to buy (scroll down).</a></li>
+            <li><a href="Contact.html" class="action_btn">Contact.</a></li>
+        </div>
+
+
+    </header>
+
+
+    <main id="swup" class="transition-fade">
+        <section id="hero">
+            <h1>Bun venit</h1>
+            <p>
+                Pregatit sa gasesti orice informatie despre lumea rep-urilor ? <br>
+                Selecteaza de sus ce vrei sa afli.
+            </p>
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const toggleBtnIcon = document.querySelector(".toggle_btn i")
+        const dropDownMeny = document.querySelector(".dropdown_menu")
+
+        toggleBtn.onclick= function () {
+            dropDownMeny.classList.toggle('open')
+            const isOpen = dropDownMeny.classList.contains("open")
+
+            toggleBtnIcon.classList = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars"
+
+        }
+    </script>
+    
+</body>
+</html>
